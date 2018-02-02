@@ -1,12 +1,10 @@
 const express = require('express')
 const app = express()
-const uuidv1 = require('uuid/v1');
-const queryString = require('query-string'); 
+const uuidv1 = require('uuid/v1'); 
 const tableify = require('tableify');
 const bodyParser = require('body-parser');
 const webshot = require('webshot');
 const multiline = require('multiline');
-const moment = require('moment');
 const _isEmpty = require('lodash.isempty')
 
 var Jimp = require("jimp");
@@ -115,7 +113,7 @@ app.post('/createImage', jsonParser, (req, res) => {
     var fileName = 'http://i.imgur.com/kL7S2sK.jpg';
     const imgTag = `<img src=${fileName}/>`;
     const date = table.find((item) => !!item.date);
-    var weeknumber = moment(date.date, "MMDDYYYY").isoWeek();
+    
     webshot(`<html><body>${imgTag}${html}</body></html>`, outfile, options, function(err) {
       console.log('err', err);
       res.json({ outname: outName });
@@ -153,4 +151,4 @@ app.get('/background', (req, res) => {
       });
 });
 
-app.listen(3001, () => console.log('Example app listening on port 3001!'))
+app.listen(process.env.PORT || 3001, () => console.log('Example app listening on port 3001!'))
