@@ -1,0 +1,27 @@
+{
+  "name": "time-report-image-gen",
+  "version": "1.0.0",
+  "description": "Generate a image from text",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "jimp": "^0.2.28",
+    "path": "^0.12.7",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterlindstrom/time-report-image-gen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterlindstrom/time-report-image-gen/issues"
+  },
+  "homepage": "https://github.com/peterlindstrom/time-report-image-gen#readme"
+}
