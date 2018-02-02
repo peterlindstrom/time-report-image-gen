@@ -1,6 +1,6 @@
 # time-report-image-gen
 # Generate image out of json => html API
-Using webshot to return a image based on text input
+Using webshot to return a image based on json input
 
 ##Setup
 > npm install
