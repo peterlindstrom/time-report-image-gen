@@ -11,7 +11,9 @@ Using webshot to return a image based on text input
 ##API
 POST http://localhost:3001/createImage
 
-example body: {
+example body:
+```
+{
   "table": [
     {
       "date": "2018-01-01",
@@ -58,10 +60,13 @@ example body: {
   ],
   "title": "Week 1"
 }
-
-return body: {
+```
+return body: 
+```
+{
     "outname": "outfile1391ca30-0869-11e8-b1e7-9584e89e8098.jpg"
 }
+```
 
 GET http://localhost:3001/image/{outname} returns the jpg
 
