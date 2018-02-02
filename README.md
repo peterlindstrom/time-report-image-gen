@@ -70,4 +70,4 @@ return body:
 
 GET http://localhost:3001/image/{outname} returns the jpg
 
-
+![Sample image](https://i.imgur.com/CnFaCEP.jpg)
