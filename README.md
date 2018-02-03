@@ -10,6 +10,7 @@ Using webshot to return a image based on json input
 
 ##API
 POST http://localhost:3001/createImage
+or https://json-to-image-generator.herokuapp.com/createImage
 
 example body:
 ```
@@ -69,5 +70,8 @@ return body:
 ```
 
 GET http://localhost:3001/image/{outname} returns the jpg
+or https://json-to-image-generator.herokuapp.com/image/{outname}
 
 ![Sample image](https://i.imgur.com/CnFaCEP.jpg)
+
+
